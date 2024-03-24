@@ -132,8 +132,8 @@ console.log(ageAverage);
 const childName = 'Thanushree';
 console.log('MY CHILD NAME IS ', childName);
 */
-
 /*
+
 let country = "Canada";
 let population = 43000000;
 const isIsland = true;
@@ -154,4 +154,115 @@ console.log('Is Canada population less than avgPopulation', population < avgPopu
 
 let description = 'Portugal is in Europe, and its 11 million people speak portuguese';
 console.log(description);
+
+
+
+const firstName = 'Sundar';
+const job = 'software professional';
+const birthYear = 1986;
+const currentYear = 2024;
+
+
+const literal = "I'm " + firstName + ', a ' + (currentYear - birthYear) + ' years old ' + job + '!';
+console.log(literal);
+
+const literalNew = `I'm ${firstName}, a ${currentYear - birthYear} years old ${job}!`;
+console.log(literalNew);
+
+console.log(`just a string`);
+
+console.log('first line \n\
+second line \n\
+third line')
+
+console.log(`first line
+second line
+third line`)
 */
+/*
+const age = 15;
+
+if (age >= 18) {
+    console.log('Sarah can start driving lincese')
+} else {
+    console.log('Sarah can NOT start driving lincese')
+    const yearsLeft = 18 - age;
+    console.log(`She has ${yearsLeft} years left to start driving`);
+}
+
+const birthYear = 1991
+let century
+
+if (birthYear >= 2000) {
+    century = '20th century'
+} else {
+    century = '19th century'
+}
+console.log(century)
+*/
+/*
+//type Conversion
+const jonas = "Jonas"
+const inputYear = '1991'
+console.log(Number(inputYear))
+console.log(Number(inputYear) + 18)
+
+console.log(Number(jonas))
+console.log(typeof NaN)
+
+console.log(String(23))
+console.log(String(23) + 18)
+
+//type Coercion
+
+console.log('I am ' + 23 + ' year old person')
+console.log('23' + '10' - 3)
+
+//Guess the ouput
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n)
+
+*/
+
+// 5 falsy values, 0, '', undefines, null, NaN
+
+/*
+const Sundar = 'SundarName'
+console.log(Boolean(0))
+console.log(Boolean(''))
+console.log(Boolean(undefined))
+console.log(Boolean(null))
+console.log(Boolean(NaN))
+console.log(Boolean(Sundar))
+console.log(Boolean({}));
+
+const money = 10;
+if (money) {
+    console.log('Dont spend too much')
+} else {
+    console.log('You dont have money')
+}
+
+let height = 0;
+if (height) {
+    console.log('height is defined')
+} else {
+    console.log('height is not defined')
+}
+
+*/
+
+const age = 'nine';
+if (age === 'nine') {
+    console.log('Age is exactly 18')
+} else {
+    console.log('Age is not exactly 18')
+}
+
+if (age == 'nine') {
+    console.log('Age is exactly 18')
+} else {
+    console.log('Age is not exactly 18')
+}

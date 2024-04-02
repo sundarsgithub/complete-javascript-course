@@ -253,7 +253,7 @@ if (height) {
 }
 
 */
-
+/*
 const age = 'nine';
 if (age === 'nine') {
     console.log('Age is exactly 18')
@@ -265,4 +265,13 @@ if (age == 'nine') {
     console.log('Age is exactly 18')
 } else {
     console.log('Age is not exactly 18')
+}
+*/
+
+const enterNumber = prompt('Whats your favorite number')
+console.log(typeof (enterNumber))
+if (enterNumber === '10') {
+    console.log("You entered ten")
+} else {
+    console.log("You entered different number")
 }

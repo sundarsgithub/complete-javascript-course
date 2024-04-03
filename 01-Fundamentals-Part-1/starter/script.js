@@ -267,7 +267,7 @@ if (age == 'nine') {
     console.log('Age is not exactly 18')
 }
 */
-
+/*
 const enterNumber = prompt('Whats your favorite number')
 console.log(typeof (enterNumber))
 if (enterNumber === '10') {
@@ -275,3 +275,112 @@ if (enterNumber === '10') {
 } else {
     console.log("You entered different number")
 }
+*/
+/*
+const favourite = Number(prompt("Whats your favourite number"))
+console.log(favourite)
+console.log(typeof (favourite))
+
+if (favourite === 23) {
+    console.log("Cool! 23 is an amazing number")
+} else if (favourite === 7) {
+    console.log("7 is also a cool number")
+} else {
+    console.log("Number is not 23 or 7")
+}
+
+if (favourite !== 23) {
+    console.log("Why not 23")
+}
+*/
+
+const hasDriversLicense = true //variable A
+const hasGoodVision = true //variable B
+
+console.log(hasDriversLicense && hasGoodVision)
+console.log(hasDriversLicense || hasGoodVision)
+console.log(!hasDriversLicense)
+
+
+/*
+if (hasDriversLicense && hasGoodVision) {
+    console.log("Should Drive")
+} else {
+    console.log("Should not drive")
+}
+*/
+
+/*
+const isTired = true
+
+if (hasDriversLicense && hasGoodVision || !isTired) {
+    console.log("Should Drive")
+} else {
+    console.log("Should not drive")
+}
+
+*/
+/*
+const score1Dolphins = Number(prompt("Enter first score of Dolphins"))
+const score2Dolphins = Number(prompt("Enter second score of Dolphins"))
+const score3Dolphins = Number(prompt("Enter third score of Dolphins"))
+
+const score1Koalas = Number(prompt("Enter first score of Koalas"))
+const score2Koalas = Number(prompt("Enter second score of Koalas"))
+const score3Koalas = Number(prompt("Enter third score of Koalas"))
+
+const avgScoreDolphins = (score1Dolphins + score2Dolphins + score3Dolphins) / 3
+const avgScoreKoalas = (score1Koalas + score2Koalas + score3Koalas) / 3
+
+console.log('Average score of Dolphins is ', avgScoreDolphins)
+console.log('Average score of Dolphins is ', avgScoreKoalas)
+
+if (avgScoreDolphins > avgScoreKoalas) {
+    console.log("Dolphins win the trophy")
+} else if (avgScoreDolphins < avgScoreKoalas) {
+    console.log("Koalas win trophy")
+} else {
+    console.log("Both win trophy")
+}
+
+*/
+/*
+const day = prompt('Enter a weekday')
+switch (day) {
+    case 'Monday':
+        console.log('Plan my course structure');
+        console.log('Go to coding meetup')
+        break
+    case 'Tuesday':
+        console.log('Prepare theory videos')
+        break
+    case 'Wednesday':
+    case 'Thursday':
+        console.log('Write code')
+        break
+    case 'Friday':
+        console.log('Debug code')
+        break
+    default:
+        console.log('Not a working day')
+}
+
+*/
+
+/*
+const age = 23;
+age >= 18 ? console.log('i like to drink wine') :
+    console.log('i like to drink water')
+
+const Age = age >= 18 ? 'wine' : 'water'
+console.log(Age)
+
+console.log(`I would like to drink ${age >= 18 ? 'wine' : 'water'}`)
+
+*/
+/*
+const bill = 275;
+const tip = console.log(`The bill was ${bill}, Tip is ${bill >= 50 && bill <= 300 ? `${bill * 0.15}` : `${bill * 0.2}`}, and the total value ${bill} `)
+
+//${ bill * 0.02} 
+*/

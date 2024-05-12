@@ -247,3 +247,110 @@ if (friends.includes(23)) {
 
 */
 
+/*
+function calcTip(billAmount) {
+    if (billAmount <= 300 && billAmount >= 50) {
+        return billAmount * 0.15
+    } else {
+        return billAmount * 0.20
+    }
+
+}
+
+//const tipAmount = calcTip(100)
+//console.log('Tip is', tipAmount)
+
+const bills = [125, 555, 44]
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]]
+console.log(bills)
+console.log(tips)
+console.log(totals)
+
+*/
+/*
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+]
+
+*/
+
+/*
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+}
+
+console.log(jonas)
+
+console.log(jonas.lastName)
+console.log(jonas['lastName'])
+
+const nameKey = 'Name'
+console.log(jonas['first' + nameKey])
+console.log(jonas['last' + nameKey])
+
+const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends')
+if (jonas[interestedIn]) {
+    console.log(jonas[interestedIn])
+} else {
+    console.log('Wrong request')
+}
+
+jonas.location = 'Portugal'
+jonas['twitter'] = '@twitter'
+console.log(jonas)
+
+*/
+
+/*
+// "Jonas has 3 friends, and his best friend is called Michael"
+const jonas = {
+    firstName: 'Jonas',
+    friends: ['Michael', 'Peter', 'Steven']
+}
+
+//console.log(jonas[friends.length]])
+console.log(jonas.firstName)
+console.log(jonas.friends.length)
+console.log(jonas.friends[0])
+*/
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    birthYear: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: false,
+
+    //   calcAge: function () {
+    //       return 2037 - this.birthYear
+    //   }
+
+    calcAge: function () {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+    calcDriversLicense: function () {
+        if (this.hasDriversLicense) {
+            return 'has';
+        } else {
+            return 'does not have';
+        }
+    }
+
+}
+
+//console.log(jonas.calcAge())
+//console.log(jonas.age)
+//console.log(jonas)
+//console.log(jonas.age)
+console.log(`${jonas.firstName} is a ${jonas.calcAge()}-year old ${jonas.job}, and he ${jonas.calcDriversLicense()} a driver's license`)
